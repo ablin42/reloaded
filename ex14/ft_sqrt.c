@@ -5,19 +5,11 @@ int	ft_sqrt(int nb)
 		int tmp;
 		tmp = nb;
 
-		while (nb < 0 || (nb * nb != tmp))
+		while (nb > 0)
 		{
-			nb--;
 			if (nb * nb == tmp)
-				printf(%d, nb);
 				return(nb);
+			nb--;
 		}
-		printf(%d, nb);
 		return(0);
 	}
-
-int	main()
-{
-	ft_sqrt(9);
-	return(0);
-}

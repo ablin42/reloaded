@@ -1,14 +1,13 @@
+void	ft_putchar(char c);
+
 void	ft_putstr(char *str)
 {
-	while (str != '\0')
-	{
-		ft_putchar(str);
-		str++;
-	}
-}
+	int i;
+	i = 0;
 
-int main()
-{
-	ft_putstr("test");
-	return(0);
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
 }

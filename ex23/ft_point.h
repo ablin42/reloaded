@@ -1,13 +1,13 @@
 #ifndef __FT_POINT_H__
 # define __FT_POINT_H__
 
-typedef int set_point;
-typedef char t_point;
 
-typedef	struct	point
+typedef struct	s_point
 {
 	int x;
 	int y;
-}		point;
+}		t_point;
+
+void		set_point(t_point *point);
 
 #endif
