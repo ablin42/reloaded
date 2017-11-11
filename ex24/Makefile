@@ -4,12 +4,14 @@ NAME = "libft.a"
 
 
 all:
-	gcc -o $(NAME) $(SRC)
+	gcc -c -Wall -Werror -Wextra $(SRCS)"*.c"
+	ar rc $(NAME)*.o
+	ranlib $(NAME)
 
 clean:
-	rm -f *.o
+	/bin/rm -f *.o
 
 fclean: clean
-	rm -f $(NAME)
+	/bin/rm -f $(NAME)
 
 re: fclean all
