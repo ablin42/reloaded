@@ -1,10 +1,8 @@
-#include <stdio.h>
-
 int	ft_sqrt(int nb)
 	{
 		int tmp;
-		tmp = nb;
 
+		tmp = nb;
 		while (nb > 0)
 		{
 			if (nb * nb == tmp)

@@ -3,8 +3,8 @@ void ft_putchar(char c);
 void ft_putstr(char *str)
 {
 	int i;
-	i = 0;
 
+	i = 0;
 	while(str[i] != '\0')
 	{
 		ft_putchar(str[i]);
@@ -14,9 +14,9 @@ void ft_putstr(char *str)
 
 int     ft_strcmp(char *s1, char *s2) 
 {         
-	int i;         
+	int i;
+
 	i = 0;          
-	
 	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])         
 		i++;         
 	return(s1[i] - s2[i]);
@@ -26,10 +26,10 @@ int main(int argc, char **argv)
 {
 	int i;
 	int j;
-	int tmp;	
+	int tmp;
+
 	j = 0;
 	tmp = 0;
-
 	while(j < argc)
 	{
 		i = 1;

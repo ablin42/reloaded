@@ -6,7 +6,6 @@ int	*ft_range(int min, int max)
 	int i;
 
 	i = 0;
-	
 	arr = (int*)malloc(sizeof(*arr)) * (max - min + 1);
 	while (min < max)
 	{
@@ -15,5 +14,4 @@ int	*ft_range(int min, int max)
 		min++;
 	}
 	return(arr);
-
 }
