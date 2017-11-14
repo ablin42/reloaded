@@ -4,8 +4,8 @@ NAME = "libft.a"
 
 
 all:
-	gcc -c -Wall -Werror -Wextra $(SRCS)"*.c"
-	ar rc $(NAME)*.o
+	gcc -c -Wall -Werror -Wextra $(SRCS)
+	ar rc $(NAME) *.o
 	ranlib $(NAME)
 
 clean:

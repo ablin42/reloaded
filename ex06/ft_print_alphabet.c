@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablin <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/13 04:17:05 by ablin             #+#    #+#             */
-/*   Updated: 2017/11/13 04:58:58 by ablin            ###   ########.fr       */
+/*   Created: 2017/11/08 05:22:50 by ablin             #+#    #+#             */
+/*   Updated: 2017/11/13 04:45:55 by ablin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_putstr(char *str)
+void	ft_print_alphabet(void)
 {
-	int i;
+	int a;
 
-	i = 0;
-	while (str[i] != '\0')
+	a = 97;
+	while (a < 123)
 	{
-		ft_putchar(str[i]);
-		i++;
+		ft_putchar(a);
+		a++;
 	}
 }

@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ablin <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/13 04:17:05 by ablin             #+#    #+#             */
-/*   Updated: 2017/11/13 04:58:58 by ablin            ###   ########.fr       */
+/*   Created: 2017/11/13 04:46:47 by ablin             #+#    #+#             */
+/*   Updated: 2017/11/13 04:47:05 by ablin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_putstr(char *str)
+void	ft_print_numbers(void)
 {
-	int i;
+	int a;
 
-	i = 0;
-	while (str[i] != '\0')
+	a = 48;
+	while (a < 58)
 	{
-		ft_putchar(str[i]);
-		i++;
+		ft_putchar(a);
+		a++;
 	}
 }
