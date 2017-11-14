@@ -6,16 +6,11 @@
 /*   By: ablin <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 04:18:23 by ablin             #+#    #+#             */
-/*   Updated: 2017/11/13 06:43:39 by ablin            ###   ########.fr       */
+/*   Updated: 2017/11/14 06:56:25 by ablin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -42,6 +37,10 @@ int		ft_strcmp(char *s1, char *s2)
 			return (-1);
 		i++;
 	}
+	if (s2[i] == '\0' && s1[i] != '\0')
+		return (1);
+	else if (s2[i] == '\0' && s1[i] != '\0')
+		return (-1);
 	return (0);
 }
 
@@ -57,9 +56,9 @@ void	ft_print(int i, int argc, char **argv)
 
 int		main(int argc, char **argv)
 {
-	int i;
-	int j;
-	char *tmp;
+	int		i;
+	int		j;
+	char	*tmp;
 
 	j = 0;
 	tmp = 0;
