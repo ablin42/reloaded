@@ -1,6 +1,6 @@
 # Piscine Reloaded
 #### This is the Piscine Reloaded project @ 42 Paris
-[100/100][Subject] (https://github.com/ablin42/reloaded/blob/master/ex05/piscine_reloaded.pdf)
+[100/100][Subject] !(https://github.com/ablin42/reloaded/blob/master/ex05/piscine_reloaded.pdf)
 
 Review the basics with a set of cherry-picked assignments from the selection Piscine.
 
